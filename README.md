@@ -20,7 +20,6 @@ Using daily data on 385 models from 66 firms over 93 days on OpenRouter, we esti
 | `logs/` | All referee reports, editorial letters, response letters, score tracking, revision changelog |
 | `logs/review/` | Complete Round 1–3 referee reports, editorial decisions, and response letters |
 | `config/` | Style references and research rules |
-| `wechat_article.md` | Chinese-language writeup of the workflow design and results |
 
 ## Workflow Design
 
