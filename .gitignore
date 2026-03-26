@@ -1,12 +1,7 @@
-# Raw data (proprietary)
 data/
-
-# Python
 __pycache__/
 *.pyc
 .venv/
-
-# LaTeX build artifacts
 *.aux
 *.log
 *.out
@@ -15,7 +10,4 @@ __pycache__/
 *.fdb_latexmk
 *.blg
 *.bbl
-
-# OS
 .DS_Store
-Thumbs.db

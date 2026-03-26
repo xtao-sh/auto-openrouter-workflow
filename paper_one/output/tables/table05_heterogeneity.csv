@@ -1,9 +1,0 @@
-Dimension,Subgroup,Coefficient,SE,N
-1. Entry type,Same-family upgrade,-0.4282,(0.1637),30903
-,Different-family entry,0.0001,(0.0034),
-2. Reasoning capability,Reasoning models,0.0003,(0.0044),12263
-2. Reasoning capability,Non-reasoning models,-0.0013,(0.0041),18640
-3. Firm size,Top-5 firms,-0.0021,(0.0058),11945
-3. Firm size,Smaller firms,0.0006,(0.0059),18958
-4. Model age,Young (≤30 days),-0.0007,(0.0024),11629
-4. Model age,Mature (>30 days),0.0137,(0.0321),19274
