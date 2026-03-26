@@ -1,0 +1,10 @@
+Check,"Same-firm [0,7]",SE,N,R²w
+(1) DV: Log tokens,0.0014,(0.0032),30699,-0.001
+(2) DV: Log market share,-0.0006,(0.0030),30903,-0.000
+"(3) High-volume only (>10K/day, N_models=165)",0.0017,(0.0062),13762,-0.001
+(4) Nest by capability tier,σ_tier=0.999,(0.000),26444,0.999
+(5) Nest by price tier,σ_price=0.992,(0.003),26444,0.993
+(6) 7-day rolling avg DV,-0.0009,(0.0031),30133,0.001
+(7) Exclude first/last 7 days,-0.0005,(0.0048),26164,-0.000
+(8) Placebo (shuffled firms),0.0018,(0.0032),30903,-0.001
+(9) Oster stability: δ=154.88,"σ_short=0.459, σ_full=0.456",,26444,R²: 0.253→0.368

@@ -1,0 +1,21 @@
+# Raw data (proprietary)
+data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.blg
+*.bbl
+
+# OS
+.DS_Store
+Thumbs.db

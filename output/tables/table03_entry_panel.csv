@@ -1,0 +1,9 @@
+Variable,(1) Coef,(1) SE,(2) Coef,(2) SE,(3) Coef,(3) SE
+"Same-firm entry [0,7]",-0.0006,(0.0030),0.0002,(0.0028),-0.0004,(0.0038)
+"Same-firm entry [8,30]",,,,,0.0007,(0.0032)
+"Rival entry [0,7]",,,0.0008,(0.0003),,
+N,30903,,30903,,30903,
+R² (within),0.000,,0.006,,-0.000,
+Model FE,Yes,,Yes,,Yes,
+Day FE,Yes,,Yes,,Yes,
+Clustering,Model,,Model,,Model,

@@ -1,0 +1,11 @@
+,0
+sigma_ols,0.456
+sigma_ols_se_model,0.042
+sigma_ols_se_firm,0.07437725347497652
+sigma_iv_blp,-0.15671555224709988
+sigma_iv_blp_se,0.09497772731330359
+first_stage_f_blp,2679.5673784523306
+pre_trend_t_same_firm,-2.456688609327277
+pre_trend_t_cross_firm,-2.04947920272927
+pre_trend_t_family_upgrade,-2.7537276693286863
+n_upgrade_events,43.0
