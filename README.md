@@ -1,29 +1,39 @@
 # Multi-Agent Academic Paper Workflow
 
-A multi-agent workflow for writing and iteratively reviewing an academic economics paper, using independent AI instances for writing, quality gates, and simulated peer review.
+A multi-agent workflow for writing and iteratively reviewing academic economics papers, using independent AI instances for idea validation, quality gates, and simulated peer review.
 
-## Paper
+## Repo Structure
+
+```
+├── WORKFLOW.md              # Unified workflow v3 (idea validation → writing → review)
+├── paper_one/               # Completed paper with full review history
+│   ├── WORKFLOW_v2.md       # Original writing workflow
+│   ├── WORKFLOW_REVIEW.md   # Original review workflow
+│   ├── code/                # Python analysis scripts
+│   ├── output/              # Tables, figures, identification memo
+│   ├── paper/               # LaTeX source + PDFs (all versions)
+│   ├── logs/                # Referee reports, editorial letters, scores
+│   └── config/              # Style references, research rules
+└── paper_two/               # Next paper (in progress)
+```
+
+## Paper One
 
 **"Creative Destruction in the Market for Intelligence: Demand Reallocation When New LLMs Enter"**
 
 Using daily data on 385 models from 66 firms over 93 days on OpenRouter, we estimate a nested logit demand model and conduct event studies around model entry events. The headline finding: creative destruction operates almost exclusively through within-family upgrades — predecessors lose 24–35% of daily requests when successors launch, while cross-firm entries produce no detectable displacement.
 
-## What This Repo Contains
-
-| Directory | Contents |
-|-----------|----------|
-| `WORKFLOW_v2.md` | Paper writing workflow — 5-layer quality assurance with 4 independent critic gates |
-| `WORKFLOW_REVIEW.md` | Simulated peer review workflow — 5 independent referee roles × 3 rounds |
-| `paper/` | LaTeX source and PDFs for all versions (original, R1 revision, R2 revision, clean final) |
-| `code/` | Python analysis scripts (data exploration, construction, regressions, robustness, heterogeneity, number verification) |
-| `output/` | Regression tables (CSV), figures (PNG), identification memo, pre-analysis plan |
-| `logs/` | All referee reports, editorial letters, response letters, score tracking, revision changelog |
-| `logs/review/` | Complete Round 1–3 referee reports, editorial decisions, and response letters |
-| `config/` | Style references and research rules |
-
 ## Workflow Design
 
-### Phase 1: Paper Writing (WORKFLOW_v2)
+### Unified Workflow v3 (`WORKFLOW.md`)
+
+The v3 workflow adds an **Idea Data Validation** phase before committing to a research question. Instead of debating ideas on paper, each candidate goes through quick data exploration to verify whether the data actually supports the direction. This was motivated by Paper One's experience — the IV strategy failed because the data couldn't support it, which could have been caught earlier.
+
+Full pipeline: Data Exploration → Idea Generation → **Idea Data Validation (new)** → Idea Selection (Gate 0) → Research Design (Gate 1) → Empirical Analysis (Gate 2) → Paper Writing (Gates 3–4) → Simulated Peer Review (3 rounds R&R)
+
+### Paper One Workflows
+
+#### Phase 1: Paper Writing (WORKFLOW_v2)
 
 Five layers of quality assurance, each targeting a specific weakness of single-agent generation:
 
@@ -33,7 +43,7 @@ Five layers of quality assurance, each targeting a specific weakness of single-a
 4. **Number verification** — Automated cross-check of every statistic in the paper against output files
 5. **Hard quantitative thresholds** — ≥20 citations, ≥5 robustness checks, 0 fabricated references, 100% number match
 
-### Phase 2: Simulated Peer Review (WORKFLOW_REVIEW)
+#### Phase 2: Simulated Peer Review (WORKFLOW_REVIEW)
 
 Simulates a top-tier economics journal R&R process with 5 independent referee roles:
 
